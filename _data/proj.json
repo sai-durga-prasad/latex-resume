@@ -1,22 +1,27 @@
 [
     {
-        "title": "Course Allotment Simulation using SAT Solver",
-        "description": "As part of Bachelors project, worked on solving the real world problem of finding a best course allocation under various constraints as a SAT (Satisfiability) problem and infer effects of different policies on course allotment and choices. Studied relative efficiency of various heuristics modeled on different solvers like MiniSAT and Glucose.",
-        "languages": "C++ MiniSAT Glucose"
+        "title": "Gen AI",
+        "description": "ADP Analytics Assist",
+        "languages": "Java, Spring Boot"
     },
     {
-        "title": "IIT Bombay Hospital Digitization",
-        "description": "Created a complete web application in Java that could handle operations on relational MySQL databases to handle various processes of the university hospital.",
-        "languages": "Java MySQL"
+        "title": "Policy Engine",
+        "description": "Developed a Meta Driven framework to drive Analytics metrics, questions and Dashboards based on User Security Permissions",
+        "languages": "Java, Spring Boot"
     },
     {
-        "title": "Simple 2D Physics Engine",
-        "description": "Wrote a physics engine for simple round bodies providing a back-end that could generate coordinates in real-time with collision, gravity, restitution and custom resolution of time.",
-        "languages": "C++"
+        "title": "Dashboard Migration",
+        "description": "Incorpated on fly migration mechanism to migrate SQL based Dashboards to NoSQL Database to make it Meta driven and provide enhanced features. ",
+        "languages": "Java, Spring Boot"
     },
     {
-        "title": "Social Sea",
-        "description": "Create a lightweight social search engine that shows the results ranked (using page-ranking) according to one's peer-group search history and rating.",
-        "languages": "PHP HTML javascript"
+        "title": "User Login Verification Using Face Recognition",
+        "description": "Engineered a robust User Interface incorporating essential user authentication elements such as UserID and Password, further fortified with facial recognition capabilities utilizing OpenCV.",
+        "languages": "OpenCV, Python, Tkinter"
+    },
+    {
+        "title": "Battery Monitoring System using IOT",
+        "description": "Conducted comprehensive analysis on Electric Vehicle battery performance, meticulously monitoring vital metrics such as voltage and current. Implemented an efficient data integration system that utilized NodeMCU and Arduino to transmit real-time battery data to Google Sheets via REST APIs.",
+        "languages": "Python, HTTP, NodeMCU"
     }
 ]

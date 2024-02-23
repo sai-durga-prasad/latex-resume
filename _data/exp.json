@@ -1,73 +1,106 @@
 [
     {
-        "company": "Microsoft",
-        "company_location": "Redmond, WA",
-        "role": "Software Engineer",
-        "team": "OneNote",
-        "time_duration": "Jun 2016 - Present",
+        "company": "ADP",
+        "company_location": "Hyderabad, India (Hybrid)",
+        "role": "Member Technical",
+        "team": "ADP DataCloud",
+        "time_duration": "Dec 2021 - Present",
         "details": [
         	{
-                "title": "Modern Hierarchy Sync",
-                "description": "Worked on a new sync platform which would load notebook structure and hierarchy faster than the current state of the art. Implemented client side representation of this hierarchy, derived from existing representation. Added functionality to be able use the new representation without the need of resetting cache or reloading the notebook. Built a small tool to visualize and debug this new representation.",
-                "languages":"C++ nodejs"
+                "title": "ADP Analytics Assistant",
+                "description": "Built MVP of chat based Analytics Application by leveraging Generative AI. ",
+                "languages":"Java, Spring Boot, AWS, Postgresql, Redis, Kubernates, Helm"
             },
         	{
-                "title": "Notebook Cloud Migration",
-                "description": "Componentized native code from OneNote desktop app to convert local OneNote notebooks to cloud compatible notebooks. This was used in the new SharePoint Migration Tool.",
-                "languages": "C++ C\\#"
+                "title": "Analytics - MyADP Integration as MFE",
+                "description": "Engineered a seamless integration solution by centralizing all Analytics APIs to route through MyADP, ensuring compliance with stringent internal security standards.",
+                "languages": "YAML, Python"
             },
             {
-                "title": "Magic Ink Lookup and Whiteboard App",
-                "description": "Worked on recognizing ink strokes into words (using onboard IA) and recognizing keywords/entities given the context (using custom entity recognition service). Implemented accumulation of images and interactive widgets (from various online sources) related to the keyword, to be inserted onto Whiteboard canvas. Implemented sharing experience for the new collaboration focused Whiteboard app which included creating and joining a shared session.",
-                "languages": "C++ C\\#"
+                "title": "Client Onboarding \\& Billing Automation",
+                "description": "Implemented client auto onboarding and billing automation strategies, resulting in a significant reduction in manual work, API hits and enhancing the overall billing experience for clients. Carefully considered business use cases to deliver a seamless billing process.",
+                "languages": "YAML, Python"
             },
             {
-                "title": "Content Addins",
-                "description": "Implemented content addins, for OneNote desktop app, as small embedded web apps that would get hosted within managed WebView controls. Created their persistence model and rendering on the desktop app.",
-                "languages": "C++ nodejs"                
+                "title": "Analytics Experience",
+                "description": "Design and develop optimal solutions using Java to meet project requirements and performance goals. Built MVP of Analytics Assistant by leveraging GenAI. Creating and optimising API's for seamless integration to front end applications. Collaborate with cross-functional teams to gather requirements and analyze technical feasibility to resolve complex business logic challenges. Optimized the performance of a feature which is majorly used in all ADP products. ",
+                "languages": "Java, Spring Boot, Micronaut, AWS, MySQL, Postgresql, MyBatis, Redis, Kafka"
+            }
+        ],
+        "points": [
+            {
+                "description": "\\textbf{Projects:} ADP Analytics Assist(GenAI), MyADP-Analytics Integration as MFE, Policy Engine, Auto Onboarding"
+            },
+            {
+                "description": "Design and develop microservices using Java and Spring Boot, ensuring high scalability and performance."
+            },
+        	{
+                "description": "Collaborated with frontend developers and Product Managers to deploy RESTful APIs, ensuring smooth communication."
+            },
+            {
+                "description": "Enhanced Client Billing Experience by optimising algorithm to boost efficiency and reduce API load."
+            },
+            {
+                "description": "Implemented caching strategies and utilised asynchronous or parallel processing to enhance application performance."
+            },
+            {
+                "description": "Integrated third-party APIs and services for additional functionalities, such as Recommender Systems and OpenAI/LLM."
+            },
+        	{
+                "description": "Engineered a seamless integration solution by centralizing all DataCloud APIs to route through MyADP, ensuring compliance with stringent internal security standards."
+            },
+        	{
+                "description": "Investigated and resolved complex technical issues, utilising debugging tools and techniques to identify root causes and implement effective solutions."
+            },
+            {
+                "description": "Utilized Docker, Kubernetes and Helm Charts for containerization, orchestration and configuration management of microservices and automated the deployment process with CI/CD pipelines."
+            },
+            {
+                "description": "Participated in code reviews and written Unit Test cases to ensure code quality and maintainability."
             }
         ]
     },
     {
-        "company": "Microsoft",
-        "company_location": "Vancouver, Canada",
-        "role": "Software Engineer",
-        "team": "OneNote",
-        "time_duration": "Nov 2014 - May 2016",
+        "company": "Mindtree",
+        "company_location": "Hyderabad, India (Remote)",
+        "role": "Software Engineer Trainee",
+        "team": "SDET Java",
+        "time_duration": "Aug 2021 - Dec 2021",
         "details": [
             {
-                "title": "Embedded Videos and Web Content",
-                "description": "Worked on adding ability on OneNote to host web content, making sure it is backwards compatible. Implemented features to make handling and editing web content on the OneNote page easier. Added support for this feature on OneNote web app.",
-                "languages": "C++ C\\#"
-            },
+                "title": "Training",
+                "description": "Got trained on Java Selenium Framework. Learnt core concepts of Java, MySQL, GIT, MongoDB. Developed basic Web Application and written Test Suite for app. ",
+                "languages": "Java, MySQL, GIT, MongoDB"
+            }
+        ],
+        "points": [
             {
-                    "title": "Merged Cells for Tables",
-                    "description": "Added support for spanned cells for tables in OneNote, keeping in mind backwards compatibility. Implemented these capabilities in OneNote web app.",
-                    "languages": "C++ C\\#"
+                "description": "Got trained on Java Selenium Framework. Learnt core concepts of Java, MySQL, GIT, MongoDB."
             },
-            {
-                "title": "Realtime Ink",
-                "description": "As a ramp up project, prototyped ink collaboration using SignalR web-sockets. Worked on experimenting load and delay with multiple inputs in realtime.",
-               	"languages": "C++ C\\#"
+        	{
+                "description": "Developed basic Web Application and written and executed test suite for it."
             }
         ]
     },
     {
-        "company": "Oracle",
-        "company_location": "Bangalore, India",
-        "role": "Software Engineering Intern",
-        "team": "Apps for Enterprises",
-        "time_duration": "May 2013 - July 2013",
+        "company": "IIIT Hyderabad",
+        "company_location": "Hyderabad, India (Remote)",
+        "role": "Summer Internship",
+        "team": "NLP",
+        "time_duration": "May 2021 - July 2021",
         "details": [
             {
-                "title": "Containerization of iOS Apps",
-                "description": "Worked on sand-boxing of enterprise applications (containerization), enabling their installation on employee's iOS devices, without worrying about security concerns. Implemented wrapping of library function calls using swizzling, objective-c backend, linker flags and dynamic library injection.",
-                "languages": "Objective-C C"
-            },
+                "title": "Headline Generation for Telugu News Articles",
+                "description": "Led Headline Generation project for Telugu news articles utilizing Natural Language Processing techniques. Played a pivotal role in the creation of training data for Telugu news articles, enhancing the dataset's quality by crafting comprehensive summaries.",
+                "languages": "Python, NLP, Google Colab"
+            }
+        ],
+        "points": [
             {
-                "title": "Sandboxed Browser App",
-                "description": "Built a demo browser application for iOS. Containerized the app using the custom script, for it to work only for whitelisted urls.",
-                "languages": "Objective-C"
+                "description": "Led Headline Generation project for Telugu news articles utilizing Natural Language Processing techniques."
+            },
+        	{
+                "description": "Played a pivotal role in the creation of training data for Telugu news articles, enhancing the dataset's quality by crafting comprehensive summaries."
             }
         ]
     }

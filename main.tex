@@ -14,11 +14,7 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-
-\usepackage[T1]{fontenc}
-\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
-\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
-
+\usepackage[urw-garamond]{mathdesign}
 \RequirePackage{luatex85}
 \usepackage{pdfcomment}
 \usepackage{luacode}
@@ -50,10 +46,15 @@
 
 % Custom commands
 %-------------------------------------------
-\definecolor{light-gray}{gray}{0.3}
-\newcommand{\resumeItem}[3]{
+\newcommand{\resumeItem}[2]{
   \item{
-    \textbf{#1} \ifthenelse{\equal{#3}{}}{}{\textcolor{light-gray}{\scriptsize\texttt{#3}}} {: \small #2 \vspace{-2pt}}
+    \textbf{#1}{: \small #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\bulletItem}[1]{
+  \item{
+    \small #1 \vspace{-2pt}
   }
 }
 
@@ -61,7 +62,7 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small\textcolor{light-gray}{#3}} & \textit{\small\textcolor{light-gray}{#4}} \\
+      \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -69,11 +70,11 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small\textcolor{light-gray}{#3 $\cdot$ #4}} & \textit{\small\textcolor{light-gray}{#5}} \\
+      \textit{#3 $\cdot$ #4} & \textit{#5} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[3]{\resumeItem{#1}{#2}{#3}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -87,12 +88,24 @@
 % Load lua script
 %-------------------------------------------
 \begin{luacode}
-require("_lua/parser.lua")
+require("lua/parser.lua")
 \end{luacode}
 
 % Print Heading
 %-------------------------------------------
 \directlua{printHeading("_data/personal.json")}
+
+% Professional Summary
+%-------------------------------------------
+\section{Summary}
+  \resumeSubHeadingListStart
+  	\item{
+        %Proficient in designing, developing, and maintaining scalable and secure applications. Adept at leveraging cutting-edge technologies, including Generative AI and Java, to engineer innovative solutions that meet project requirements and performance goals. 
+        %Highly skilled and results-driven 
+        %Professional software engineer with over 2.5 years of expertise specializing in backend-heavy full-stack development. Demonstrated proficiency in designing, developing, and optimizing robust software solutions to meet project requirements and performance goals. 
+        Experienced software engineer with 3+ years of specialized in backend-heavy full-stack development. Proficient in designing, developing, and optimizing robust software solutions to meet project requirements and performance goals.
+   }
+  \resumeSubHeadingListEnd
 
 % Print Education
 %-------------------------------------------
@@ -101,29 +114,38 @@ require("_lua/parser.lua")
 	\directlua{printEduItems("_data/edu.json")}
   \resumeSubHeadingListEnd
 
+% Print Skills
+%-------------------------------------------
+\section{Skills}
+  \resumeSubHeadingListStart 
+    \item{
+      \textbf{Languages/Frameworks}{: \directlua{printList("_data/personal.json", "languages", "language")}}
+     
+      \textbf{Software Engineering}{: \directlua{printList("_data/personal.json", "soft-engg", "technology")}}
+      
+      \textbf{Tools and Technologies}{: \directlua{printList("_data/personal.json", "tools-tech", "technology")}}
+
+      }
+
+  \resumeSubHeadingListEnd
+
+
+
 % Print Experience
 %-------------------------------------------
 \section{Experience}
   \resumeSubHeadingListStart
-  	\directlua{printExpItems("_data/exp.json")}
+  	\directlua{printExpItemsInBullets("_data/exp.json")}
   \resumeSubHeadingListEnd
 
 % Print Projects
 %-------------------------------------------
-\section{\href{https://github.com/pforpallav}{Projects}}
+\section{\href{https://github.com/sai-durga-prasad}{Projects}}
   \resumeSubHeadingListStart
     \directlua{printProjItems("_data/proj.json")}
   \resumeSubHeadingListEnd
   
-% Print Skills
-%-------------------------------------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart 
-    \item{
-      \textbf{Languages}{: \directlua{printList("_data/personal.json", "languages", "language")}}
-      \hfill
-      \textbf{Technologies}{: \directlua{printList("_data/personal.json", "technologies", "technology")}}
-      }
-  \resumeSubHeadingListEnd
 
+
+  
 \end{document}

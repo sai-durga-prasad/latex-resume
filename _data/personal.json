@@ -1,39 +1,196 @@
 [
     {
-        "name": "Kumar Pallav",
-        "website": "http://kumarpallav.com",
-        "email": "me@kumarpallav.com",
-        "email2": "pforpallav@gmail.com",
-        "phone": "+1-xxx-xxx-xxxx",
-        "linkedin":"https://www.linkedin.com/in/kumar-pallav-156a1657/",
-        "facebook":"https://www.facebook.com/pforpallav",
-        "github":"https://github.com/pforpallav",
+        "name": "Sai Durga Prasad Gundarapu",
+        "website": "sample-website.xyz",
+        "email": "saidurgaprasadg9@gmail.com",
+        "phone": "+91 xxxxxxxx",
+        "linkedin":"sai-durga-prasad-gundarapu",
+        "facebook":"https://www.facebook.com/",
+        "github":"https://github.com/sai-durga-prasad",
         "languages": [
             {
-                "language": "C++"
+                "language": "Java"
             },
             {
-                "language": "C\\#"
+                "language": "Spring Boot"
+            },
+            {
+                "language": "Hibernate"
+            },
+            {
+                "language": "Python"
+            },
+            {
+                "language": "HTML"
+            },
+            {
+                "language": "CSS"
             },
             {
                 "language": "JavaScript"
             },
             {
-                "language": "Java"
-            },
-            {
-                "language": "C"
+                "language": "Angular"
             }
         ],
-        "technologies": [
+        "soft-engg": [
             {
-                "technology": "NodeJs"
+                "technology": "J2EE"
             },
             {
-                "technology": "UWP"
+                "technology": "REST APIs"
             },
             {
-                "technology": "Win32"
+                "technology": "Design Patterns"
+            },
+            {
+                "technology": "Micro Services"
+            },
+            {
+                "technology": "Data Structures and Algorithms"
+            },
+            {
+                "technology": "Unit Testing"
+            },
+            {
+                "technology": "GIT"
+            },
+            {
+                "technology": "AWS"
+            },
+            {
+                "technology": "Test Driven Development"
+            },
+            {
+                "technology": "Agile Methodologies"
+            }
+        ],
+        "tools-tech": [
+            {
+                "technology": "MySQL"
+            },
+            {
+                "technology": "MyBatis"
+            },
+            {
+                "technology": "JUnit"
+            },
+            {
+                "technology": "MongoDB"
+            },
+            {
+                "technology": "Postgresql"
+            },
+            {
+                "technology": "Redis"
+            },
+            {
+                "technology": "Kafka"
+            },
+            {
+                "technology": "Jenkins"
+            },
+            {
+                "technology": "Postman"
+            },
+            {
+                "technology": "Gradle"
+            },
+            {
+                "technology": "Splunk"
+            },
+            {
+                "technology": "Docker"
+            },
+            {
+                "technology": "Kubernates"
+            },
+            {
+                "technology": "Helm Charts"
+            },
+            {
+                "technology": "OpenCV"
+            }
+        ],
+        "Proficient": [
+            {
+                "technology": "Data Structures and Algorithms"
+            },
+            {
+                "technology": "Redis"
+            },
+            {
+                "technology": "Postgresql"
+            },
+            {
+                "technology": "Kafka"
+            },
+            {
+                "technology": "Jenkins"
+            },
+            {
+                "technology": "Python"
+            },
+            {
+                "technology": "JavaScript"
+            },
+            {
+                "technology": "Splunk"
+            },
+            {
+                "technology": "HTML5"
+            },
+            {
+                "technology": "CSS3"
+            }
+        ],
+        "Novice": [
+            {
+                "technology": "AWS"
+            },
+            {
+                "technology": "Kubernates"
+            },
+            {
+                "technology": "Helm Charts"
+            }
+        ],
+        "expert": [
+            {
+                "technology": "Core Java"
+            },
+            {
+                "technology": "J2EE"
+            },
+            {
+                "technology": "Spring Boot"
+            },
+            {
+                "technology": "OOPs"
+            },
+            {
+                "technology": "Hibernate"
+            },
+            {
+                "technology": "MySQL"
+            },
+            {
+                "technology": "MongoDB"
+            },
+            {
+                "technology": "REST APIs"
+            },
+            {
+                "technology": "JUnit"
+            },
+            {
+                "technology": "Design Patterns"
+            },
+            {
+                "technology": "GIT"
+            },
+            {
+                "technology": "MyBatis"
             }
         ]
     }

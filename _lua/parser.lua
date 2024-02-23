@@ -34,7 +34,25 @@ function printExpItems(file)
       tex.print("\\resumeItem")
       tex.print("{" .. value["title"] .. "}")
       tex.print("{" .. value["description"] .. "}")
-      tex.print("{" .. value["languages"] .. "}")
+    end
+    tex.print("\\resumeItemListEnd")
+  end
+end
+
+function printExpItemsInBullets(file)
+  local json = getJsonFromFile(file)
+  for key, value in pairs(json) do
+    tex.print("\\resumeExpEntry")
+    tex.print("{" .. value["company"] .. "}")
+    tex.print("{" .. value["company_location"] .. "}")
+    tex.print("{" .. value["role"] .. "}")
+    tex.print("{" .. value["team"] .. "}")
+    tex.print("{" .. value["time_duration"] .. "}")
+
+    tex.print("\\resumeItemListStart")
+    for key, value in pairs(value["points"]) do
+      tex.print("\\bulletItem")
+      tex.print("{" .. value["description"] .. "}")
     end
     tex.print("\\resumeItemListEnd")
   end
@@ -46,7 +64,6 @@ function printProjItems(file)
     tex.print("\\resumeSubItem")
     tex.print("{" .. value["title"] .. "}")
     tex.print("{" .. value["description"] .. "}")
-    tex.print("{" .. value["languages"] .. "}")
   end
 end
 
@@ -55,17 +72,16 @@ function printHeading(file)
   for key, value in pairs(json) do
     tex.print("\\begin{tabular*}{\\textwidth}{l@{\\extracolsep{\\fill}}r}")
 
-    tex.print("\\textbf{\\href")
-    tex.print("{" .. value["website"] .. "/}")
-    tex.print("{\\Large " .. value["name"] .. "}}")
-    tex.print(" & Email: \\href")
+    tex.print("\\textbf")
+    tex.print("{\\Large " .. value["name"] .. "}")
+    tex.print(" & Email : \\href")
     tex.print("{mailto:" .. value["email"] .. "}")
-    tex.print("{" .. value["email"] .. "}\\\\")
+    tex.print("{" .. value["email"] .. "}\\")
 
-    tex.print("\\href")
-    tex.print("{" .. value["website"] .. "/}")
-    tex.print("{" .. value["website"] .. "}")
-    tex.print(" & Phone: " .. value["phone"] .. "\\\\")
+    tex.print(" & LinkedIn : \\href")
+    tex.print("{https://www.linkedin.com/in/" .. value["linkedin"] .. "}")
+    tex.print("{" .. value["linkedin"] .. "}\\")
+    tex.print(" & Mobile : " .. value["phone"] .. "\\\\")
 
     tex.print("\\end{tabular*}")
   end
